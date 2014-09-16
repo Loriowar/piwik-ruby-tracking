@@ -6,7 +6,7 @@
 
   (function() {
       <% if protocol.present? %>
-        var protocol = '<% protocol %>';
+        var protocol = '<%= protocol %>';
       <% else %>
         var protocol = ("https:" == document.location.protocol) ? "https" : "http";
       <% end %>

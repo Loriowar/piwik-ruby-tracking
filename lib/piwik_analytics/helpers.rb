@@ -10,8 +10,10 @@ module PiwikAnalytics
         file = "piwik_analytics/piwik_tracking_tag"
       end
       render({
-        :file => file,
-        :locals => {:url => config.url, :id_site => config.id_site}
+        file: file,
+        locals: {url: config.url,
+                 id_site: config.id_site,
+                 protocol: config.protocol}
       })
     end
   end
