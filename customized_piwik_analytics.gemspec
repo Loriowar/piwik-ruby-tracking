@@ -1,5 +1,5 @@
 spec = Gem::Specification.new do |s|
-  s.name              = 'customize_piwik_analytics'
+  s.name              = 'customized_piwik_analytics'
   s.version           = '1.0.4'
   s.date              = Time.now.strftime "%Y-%m-%d"
   s.author            = 'Fabian Becker, Ivan Zabrovskiy'
@@ -8,7 +8,7 @@ spec = Gem::Specification.new do |s|
   s.summary           = "[Rails] Easily include Piwik tracking in your Rails application."
 
   s.description = <<-DESC
-    The piwik_analytics gem provides an easy way to include Piwik into your application.
+    The customized_piwik_analytics gem provides an easy way to include Piwik into your application.
     By default it will output the synchronous piwik tracking code for every page
     (given that it is configured correctly).
     In this version add option for specify protocol (http/https/etc) for Piwik requests.

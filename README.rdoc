@@ -4,16 +4,16 @@
 
 <b>Note:</b> This Gem has undergone a major rewrite in 1.x compared to 0.9.x.
 
-The piwik_analytics gem provides an easy way to include Piwik into your application.
+The customized_piwik_analytics gem provides an easy way to include Piwik into your application.
 By default it will output the synchronous piwik tracking code for every page
 (given that it is configured correctly).
 In this version added option for specify protocol (http/https/etc) for Piwik requests.
 
 == Installation
 
-Add `piwik_analytics` to Gemfile:
+Add `customized_piwik_analytics` to Gemfile:
 
-    gem 'piwik_analytics', '~> 1.0.0'
+    gem 'customized_piwik_analytics', '~> 1.0.0'
 
 Run the generator:
 
