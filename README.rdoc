@@ -7,6 +7,7 @@
 The piwik_analytics gem provides an easy way to include Piwik into your application.
 By default it will output the synchronous piwik tracking code for every page
 (given that it is configured correctly).
+In this version added option for specify protocol (http/https/etc) for Piwik requests.
 
 == Installation
 
@@ -26,6 +27,8 @@ of your application.
 
 Open up `config/piwik.yml` and edit the settings. Each setting is described in
 the config file itself.
+Additionally there is a 'protocol' option. It allows to set differ protocol for
+analytical requests. By default it work the same way as parent variant of the gem.
 
 == Usage
 
@@ -34,7 +37,3 @@ Inside your `application.html.erb` (or haml, slim) simply add
     <%= piwik_tracking_tag %>
 
 Enjoy :)
-
-
-= Licence
-Copyright(c) 2010-2012 Fabian Becker, released under MIT licence.

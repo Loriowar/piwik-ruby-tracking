@@ -10,6 +10,14 @@ module PiwikAnalytics
     end
 
     #
+    # The protocol for requests to the Piwik
+    # Defaults to nil
+    #
+    def protocol
+      @protocol ||= user_configuration_from_key('protocol')
+    end
+
+    #
     # The ID of the tracked website
     # Defaults to 1
     #

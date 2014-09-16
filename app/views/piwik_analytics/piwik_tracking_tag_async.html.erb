@@ -5,7 +5,12 @@
   _paq.push(["enableLinkTracking"]);
 
   (function() {
-    var u = (("https:" == document.location.protocol) ? "https" : "http") + "://<%= url %>/";
+      <% if protocol.present? %>
+        var protocol = '<% protocol %>';
+      <% else %>
+        var protocol = ("https:" == document.location.protocol) ? "https" : "http";
+      <% end %>
+    var u = protocol + "://<%= url %>/";
     _paq.push(["setTrackerUrl", u+"piwik.php"]);
     _paq.push(["setSiteId", <%= id_site %>]);
     var d=document,
